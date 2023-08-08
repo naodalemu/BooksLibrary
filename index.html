@@ -21,7 +21,7 @@
                         <img src="Icons/logo.svg" class="logo" alt="logo">
                         <ul class="left-links">
                             <li class="nav-link"><a href="" class="nav-hover">Home</a></li>
-                            <li class="nav-link"><a href="" class="nav-hover">About</a></li>
+                            <li class="nav-link"><a href="chart.html" class="nav-hover">About</a></li>
                             <li class="nav-link"><a href="" class="nav-hover">Contact</a></li>
                         </ul>
                     </div>
@@ -81,7 +81,10 @@
                         </div>
 
                         <div class="category-image-container">
-                            <img src="Images/linegraph.gif" alt="Graph of the category of books" class="category-bar">
+                            <div>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                            <!-- <img src="Images/linegraph.gif" alt="Graph of the category of books" class="category-bar"> -->
                         </div>
 
                         <div class="vertical-line"></div>
@@ -134,7 +137,10 @@
                         <div class="bar-dash containers">
 
                             <div class="bar-dash-image-container">
-                                <img src="Images/istockphoto-538088027-612x612.jpg" alt="" class="bar-dash-image">
+                                <div>
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                                <!-- <img src="Images/istockphoto-538088027-612x612.jpg" alt="" class="bar-dash-image"> -->
                             </div>
 
                             <div class="bar-dash-text">
@@ -163,6 +169,29 @@
         </section>
         
     </section>
+
+    <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+                                  
+    <script>
+      const ctx = document.getElementById('myChart');
+    
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['A.M', 'M.E', 'C.E', 'C.S', 'A.B', 'Arc'],
+          datasets: [{
+            label: '# books per category',
+            data: [15804, 10342, 13054, 20438, 8392, 12439],
+            borderWidth: 1
+          }]
+        },
+        options: {
+            label: {
+                display: false
+            }
+        }
+      });
+    </script>
 
 </body>
 </html>

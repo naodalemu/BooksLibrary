@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+      
+      <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+                                  
+    <script>
+      const ctx = document.getElementById('myChart');
+    
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Applied Mathematics', 'Mechanical Enginnering', 'Chemical Enginnering', 'Computer Science', 'Applied Biology', 'Archtecture'],
+          datasets: [{
+            label: '# books per category',
+            data: [15804, 10342, 13054, 20438, 8392, 12439],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+
+</body>
+</html>

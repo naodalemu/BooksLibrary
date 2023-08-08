@@ -131,14 +131,23 @@ a {
 
 .dash-container {
     max-width: 1000px;
-    height: 80vh;
+    height: 90vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containers {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px 20px;
 }
 
 .category-dash {
     width: 100%;
     height: 30%;
-    background-color: white;
-    border-radius: 10px;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
@@ -146,16 +155,27 @@ a {
 
 .category-explanation {
     padding-right: 20px;
+    width: 40%;
+}
+
+.category-image-container {
+    width: 37%;
+    height: 100%;
+}
+
+.category-bar {
+    width: 100%;
+    height: 100%;
 }
 
 .vertical-line {
     border: 1px solid rgb(113, 113, 113);
     height: 100%;
-    margin: 0px 20px;
+    margin-left: 20px;
 }
 
 .top-category {
-    padding-right: 20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -176,4 +196,53 @@ a {
 
 .top-amounts {
     font-size: xx-large;
+}
+
+.compound-dash {
+    display: flex;
+    width: 100%;
+    height: 67%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-dash {
+    width: 38%;
+}
+
+.bar-dash-image-container {
+    width: 100%;
+}
+
+.bar-dash-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.multiple-rating {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-rating {
+    width: 100%;
+    height: 50%;
+}
+
+.charts-dash {
+    height: 46%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-chart {
+    height: 100%;
+    width: 60%;
+}
+
+.right-chart {
+    height: 100%;
+    width: 37%;
 }

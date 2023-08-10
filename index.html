@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library of Addis Ababa University</title>
     <link rel="icon" type="icon" href="Icons/books.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="charts.css">
 </head>
+
 <body>
-    
+
     <section class="master">
 
         <section class="shader">
 
             <section class="master-wrapper">
-    
+
                 <section class="navbar">
-    
+
                     <div class="left-side">
                         <img src="Icons/logo.svg" class="logo" alt="logo">
                         <ul class="left-links">
@@ -25,14 +28,14 @@
                             <li class="nav-link"><a href="" class="nav-hover">Contact</a></li>
                         </ul>
                     </div>
-    
+
                     <div class="right-side">
                         <ul class="right-links">
                             <li class="nav-link login"><a href="" class="nav-hover">Log In</a></li>
                             <li class="nav-link signup"><a href="">Sign Up</a></li>
                         </ul>
                     </div>
-    
+
                 </section>
 
                 <section class="hero">
@@ -54,7 +57,7 @@
                     </div>
 
                 </section>
-    
+
             </section>
 
         </section>
@@ -70,21 +73,18 @@
                 <div class="dash-container">
                     <div class="category-dash containers">
                         <div class="category-explanation">
-                            <h2 class="category-dash-heading">
+                            <h2 class="graph-heading">
                                 Category
                             </h2>
                             <p class="category-dash-desc">
-                                The distribution of books across different categories. 
-                                All books are categorized by department and you can take 
-                                a look to know which department have the most books.
+                                The distribution of books across different categories.
+                                Books are categorized by department and here you know
+                                which department have the most books.
                             </p>
                         </div>
 
-                        <div class="category-image-container">
-                            <div>
-                                <canvas id="myChart"></canvas>
-                            </div>
-                            <!-- <img src="Images/linegraph.gif" alt="Graph of the category of books" class="category-bar"> -->
+                        <div class="category-graph-container">
+                            <canvas id="category"></canvas>
                         </div>
 
                         <div class="vertical-line"></div>
@@ -135,22 +135,63 @@
                     </div>
                     <div class="compound-dash">
                         <div class="bar-dash containers">
-
-                            <div class="bar-dash-image-container">
-                                <div>
-                                    <canvas id="myChart"></canvas>
-                                </div>
-                                <!-- <img src="Images/istockphoto-538088027-612x612.jpg" alt="" class="bar-dash-image"> -->
+                            <h2 class="graph-heading">
+                                Availability
+                            </h2>
+                            <div class="bar-dash-graph-container">
+                                <canvas id="availability"></canvas>
                             </div>
 
                             <div class="bar-dash-text">
-                                
+                                <p class="bar-dash-desc">
+                                    Here you can see how many books are checkedout and
+                                    how many are still available from the general view
+                                    of every book in the library!
+                                </p>
+                                <div class="available-container">
+                                    <h4 class="bar-dash-availability">
+                                        Available
+                                    </h4>
+                                    <h4 class="bar-dash-availability-percentage">
+                                        89%
+                                    </h4>
+                                </div>
+                                <div class="borrowed-container">
+                                    <h4 class="bar-dash-borrow">
+                                        Borrowed
+                                    </h4>
+                                    <h4 class="bar-dash-borrow-percentage">
+                                        11%
+                                    </h4>
+                                </div>
                             </div>
 
                         </div>
-                        <div class="multiple-rating">
-                            <div class="book-rating containers">
-
+                        <div class="multiple-trend">
+                            <div class="book-trend containers">
+                                <div class="book-trend-text">
+                                    <dir>
+                                        <h2 class="graph-heading">
+                                            Borrowing Trends
+                                        </h2>
+                                        <p class="book-trend-desc">
+                                            This shows the busierst months of the year
+                                            on the book borrowing trend. Usually students
+                                            tend to borrow books when exams are close!
+                                        </p>
+                                    </dir>
+                                    <div class="this-month-container">
+                                        <h4 class="book-trend-this-month">
+                                            This Month
+                                        </h4>
+                                        <h4 class="book-trend-this-month-percentage">
+                                            1,532
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="book-trend-graph">
+                                    <canvas id="borrow-trends"></canvas>
+                                </div>
                             </div>
                             <div class="charts-dash">
                                 <div class="left-chart containers">
@@ -167,31 +208,13 @@
             </section>
 
         </section>
-        
+
     </section>
 
     <script src="node_modules/chart.js/dist/chart.umd.js"></script>
-                                  
-    <script>
-      const ctx = document.getElementById('myChart');
-    
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ['A.M', 'M.E', 'C.E', 'C.S', 'A.B', 'Arc'],
-          datasets: [{
-            label: '# books per category',
-            data: [15804, 10342, 13054, 20438, 8392, 12439],
-            borderWidth: 1
-          }]
-        },
-        options: {
-            label: {
-                display: false
-            }
-        }
-      });
-    </script>
+
+    <script src="charts.js"></script>
 
 </body>
+
 </html>

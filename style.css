@@ -143,6 +143,7 @@ a {
     border-radius: 20px;
     overflow: hidden;
     padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .category-dash {
@@ -158,9 +159,11 @@ a {
     width: 40%;
 }
 
-.category-image-container {
+.category-graph-container {
     width: 37%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .category-bar {
@@ -208,10 +211,16 @@ a {
 
 .bar-dash {
     width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.bar-dash-image-container {
+.bar-dash-graph-container {
     width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 .bar-dash-image {
@@ -219,16 +228,17 @@ a {
     border-radius: 20px;
 }
 
-.multiple-rating {
+.multiple-trend {
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.book-rating {
+.book-trend {
     width: 100%;
     height: 50%;
+    display: flex;
 }
 
 .charts-dash {
@@ -245,4 +255,38 @@ a {
 .right-chart {
     height: 100%;
     width: 37%;
+}
+
+.available-container, .borrowed-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-dash-desc {
+    margin-bottom: 8px;
+}
+
+.book-trend-graph {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.graph-heading {
+    padding-bottom: 5px;
+}
+
+.book-trend-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    padding-right: 20px;
+}
+
+.this-month-container {
+    display: flex;
+    justify-content: space-between;
 }

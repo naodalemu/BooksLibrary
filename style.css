@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: raleway;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -345,7 +346,7 @@ a {
 
 .rule-card-container {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .rule-cards {
@@ -392,8 +393,8 @@ a {
 .goto-library {
     margin-bottom: 100px;
     padding: 10px 30px;
-    background: url("Images/mountain.jpg");
-    background-size: cover;
+    background: url("Images/cloudy-sky.jpg");
+    background-size: contain;
     background-position: bottom;
     background-attachment: fixed;
     border: solid 2px white;
@@ -409,13 +410,85 @@ a {
     color: #333333;
 }
 
+/* Contact Us Section */
+
 .contact-us {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("Images/Binary Kit/Black/Binary_black_011.png");
+    background: url("Images/Binary Kit/Black/Binary_black_015.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 60%;
+}
+
+.send-contact {
+    width: 35%;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.each-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.icons {
+    padding-right: 10px;
+}
+
+.fa-book-atlas {
+    color: #283D3B;
+}
+
+.fa-twitter {
+    color: #1c9cea;
+}
+
+.fa-youtube {
+    color: #ef0000;
+}
+
+.fa-facebook {
+    color: #176fe4;
+}
+
+.contact-inputs {
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-weight: 600;
+    resize: none;
+}
+
+.the-contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-submit {
+    background: transparent;
+    margin-bottom: 0px;
 }

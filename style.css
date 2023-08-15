@@ -82,7 +82,7 @@ a {
 
 .nav-hover::before {
     transition: 0.5s;
-    height: 5px;
+    height: 3px;
     content: "";
     position: absolute;
     background-color: white;
@@ -90,7 +90,7 @@ a {
 
   .nav-link-ltr::before {
     width: 0%;
-    bottom: -5px;
+    bottom: -3px;
   }
 
   .nav-link-ltr:hover::before {
@@ -416,7 +416,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("Images/Binary Kit/Black/Binary_black_015.png");
+    background: url("Images/Binary Kit/Black/Binary_black_011.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -427,14 +427,24 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 100px;
 }
 
 .map-container {
     border-radius: 20px;
-    overflow: hidden;
+    padding: 20px;
     width: 60%;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+}
+
+.map-bender {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border: 10px solid #808080;
 }
 
 .send-contact {

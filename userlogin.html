@@ -15,7 +15,7 @@
     <link href="Icons/fontawesome/css/brands.css" rel="stylesheet">
     <link href="Icons/fontawesome/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                     <img src="Icons/logo.svg" class="logo" alt="logo">
                     <ul class="left-links">
                         <li class="nav-link"><a href="index.html" class="nav-hover nav-link-ltr">Home</a></li>
-                        <li class="nav-link"><a href="#" class="nav-hover nav-link-ltr">About</a></li>
+                        <li class="nav-link"><a href="about.html" class="nav-hover nav-link-ltr">About</a></li>
                         <li class="nav-link"><a href="index.html#contact-us" class="nav-hover nav-link-ltr">Contact</a>
                         </li>
                     </ul>
@@ -38,35 +38,42 @@
 
                 <div class="right-side">
                     <ul class="right-links">
-                        <li class="nav-link login"><a href="userlogin.html" class="nav-hover nav-link-ltr">Log In</a></li>
                         <li class="nav-link signup"><a href="usersignup.html">Sign Up</a></li>
                     </ul>
                 </div>
 
             </section>
 
-            <section class="about-hero">
+            <section class="login-hero">
 
-                <div class="about-container">
-                    <div class="about-bender">
-                        <div class="about-left-side">
-                            <h1 class="about-name">
-                                About<br>Us
-                            </h1>
-                            <p class="about-desc">
-                                Modern higher education in Ethiopia began with the University College of Addis Ababa
-                                (UCAA) founding in 1950. At the same time, the UCAA Library was set up to serve the
-                                student population of 71 and 9 faculty members at the Arat kilo campus.
-                            </p>
-                            <a href="http://www.aau.edu.et/library/read-more/">
-                                <button class="read-more">Read More</button>
+                <div class="login-container">
+                    <div class="left-login">
+                        <h1 class="login-desc-name">
+                            Welcome Back
+                        </h1>
+                        <p class="login-desc-text">
+                            Stay Connected to our library.
+                            If you don't have an account please
+                            click the button below and create an
+                            account.
+                        </p>
+                        <a href="usersignup.html">
+                            <button class="go-to-signup">Sign Up</button>
+                        </a>
+                    </div>
+                    <div class="right-login">
+                        <h1 class="login-name">
+                            Member
+                        </h1>
+                        <form action="" class="login-form">
+                            <input type="email" name="email" id="email" placeholder="Email Address" class="login-inputs" required>
+                            <input type="password" name="memberPassword" id="password" placeholder="Password" class="login-inputs" required>
+                            <a href="#" class="forget">Forgot Your Password?</a>    
+                            <button class="get-in">Log In</button>
+                            <a href="adminlogin.html">
+                                <p class="go-to-admin-signup">I'm an Admin</p>
                             </a>
-                        </div>
-                        <div class="about-right-side">
-                            <div class="about-artifact">
-
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
 

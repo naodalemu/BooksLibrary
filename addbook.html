@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library of Addis Ababa University</title>
+    <link rel="icon" type="icon" href="Icons/books.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="Icons/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="Icons/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="Icons/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="addbook.css">
+</head>
+
+<body>
+
+    <section class="master">
+
+        <section class="master-wrapper">
+
+            <section class="navbar">
+
+                <div class="left-side">
+                    <img src="Icons/logo.svg" class="logo" alt="logo">
+                    <ul class="left-links">
+                        <li class="nav-link"><a href="index.html" class="nav-hover nav-link-ltr">Home</a></li>
+                        <li class="nav-link"><a href="about.html" class="nav-hover nav-link-ltr">About</a></li>
+                        <li class="nav-link"><a href="index.html#contact-us" class="nav-hover nav-link-ltr">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-side">
+                    <ul class="right-links">
+                        <li class="nav-link login"><a href="#" class="nav-hover nav-link-ltr">Naod Alemu</a></li>
+                        <i class="fa fa-solid fa-bars" style="color: white;"></i>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="addbook-hero">
+
+                <div class="addbook-container">
+                    <div class="left-addbook">
+                        <h1 class="addbook-desc-name">
+                            Add a Book
+                        </h1>
+                    </div>
+                    <div class="right-addbook">
+                        <form  method="post" action="addbook" class="addbook-form">
+                            <div class="left-form">
+                                <input type="text" name="bookTitle" id="bookTitle" placeholder="Book Title" class="addbook-inputs" required>
+                                <input type="text" name="category" id="category" placeholder="Category" class="addbook-inputs" required>
+                                <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Description" class="addbook-inputs addbook-textarea" required></textarea>
+                            </div>
+                            <div class="right-form">
+                                <input type="text" name="author" id="author" placeholder="Author" class="addbook-inputs" required>
+                                <input type="text" name="isbn" id="isbn" placeholder="ISBN" class="addbook-inputs" required>
+                                <input type="date" name="publishDate" id="publishDate" class="addbook-inputs" required>
+                                <input type="file" name="coverPhoto" id="coverPhoto" placeholder="Cover Photo" class="addbook-inputs" required>
+                                <button class="register">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+    </section>
+
+</body>
+
+</html>

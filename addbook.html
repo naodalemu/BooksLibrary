@@ -57,14 +57,28 @@
                         <form  method="post" action="addbook" class="addbook-form">
                             <div class="left-form">
                                 <input type="text" name="bookTitle" id="bookTitle" placeholder="Book Title" class="addbook-inputs" required>
-                                <input type="text" name="category" id="category" placeholder="Category" class="addbook-inputs" required>
-                                <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Description" class="addbook-inputs addbook-textarea" required></textarea>
+                                <select name="bookCategroryId" id="bookCategroryId" class="addbook-inputs" required>
+                                    <option value="">Category</option>
+                                    <option value="Medicine">Medicine</option>
+                                    <option value="Computer Science">Computer Science</option>
+                                    <option value="Applied Mathematics">Applied Mathematics</option>
+                                    <option value="Applied Biology">Applied Biology</option>
+                                    <option value="Archtecture">Archtecture</option>
+                                </select>                                
+                                <textarea name="bookDiscreption" id="bookDiscreption" cols="30" rows="10" placeholder="Description" class="addbook-inputs addbook-textarea" required></textarea>
                             </div>
                             <div class="right-form">
-                                <input type="text" name="author" id="author" placeholder="Author" class="addbook-inputs" required>
-                                <input type="text" name="isbn" id="isbn" placeholder="ISBN" class="addbook-inputs" required>
-                                <input type="date" name="publishDate" id="publishDate" class="addbook-inputs" required>
-                                <input type="file" name="coverPhoto" id="coverPhoto" placeholder="Cover Photo" class="addbook-inputs" required>
+                                <input type="text" name="bookISBN" id="bookISBN" placeholder="ISBN" class="addbook-inputs" required>
+                                <select name="bookAuthor" id="bookAuthor" class="addbook-inputs" required>
+                                    <option value="">Author</option>
+                                    <option value=">Morgan Housel">Morgan Housel</option>
+                                    <option value="Tony Fagioli">Tony Fagioli</option>
+                                    <option value="Tobby E. Pearson">Tobby E. Pearson</option>
+                                    <option value="J.K. Rowling">J.K. Rowling</option>
+                                    <option value="Brandon Sanderson">Brandon Sanderson</option>
+                                </select>
+                                <input type="number" name="bookAmount" id="bookAmount" class="addbook-inputs" placeholder="Book Amount" required>
+                                <input type="file" name="ProfileImage" id="ProfileImage" placeholder="Cover Photo" class="addbook-inputs" required>
                                 <button class="register">Add</button>
                             </div>
                         </form>

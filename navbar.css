@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: raleway;
-    transition: 0.3s ease-in-out;
     scroll-behavior: smooth;
 }
 
@@ -38,6 +37,11 @@ a {
 .left-links,
 .right-links {
     display: flex;
+}
+
+.right-links {
+    display: flex;
+    align-items: center;
 }
 
 .nav-link {

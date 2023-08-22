@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: raleway;
+    transition: 0.3s ease-in-out;
     scroll-behavior: smooth;
 }
 
@@ -83,4 +84,38 @@ a {
     padding: 5px 18px;
     border-radius: 7px;
     margin-left: 10px;
+}
+
+/* The drop down menu */
+
+.nav-lists {
+    position: absolute;
+    background: #f2f4f8;
+    color: #333333;
+    padding: 20px;
+    border-radius: 10px 0px 10px 10px;
+    right: 0px;
+    top: 20px;
+    font-size: large;
+    font-weight: 500;
+    overflow: hidden;
+    width: max-content;
+}
+
+.admin-nav {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.admin-nav:hover {
+    color: #aaaaaa;
+}
+
+.list-toggle {
+    position: relative;
+}
+
+.hidden {
+    height: 0px;
+    display: none;
 }

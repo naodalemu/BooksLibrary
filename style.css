@@ -21,6 +21,7 @@ a {
 .shader {
     background: linear-gradient(180deg, rgba(128, 128, 128, 1) 0%, rgba(0, 212, 255, 0) 100%);
     height: 100vh;
+    padding: 0px 50px;
 }
 
 .master-wrapper-one {
@@ -41,6 +42,7 @@ a {
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding: 0px 50px;
 }
 
 /* Hero Section */
@@ -108,8 +110,8 @@ a {
 }
 
 .dash-container {
-    max-width: 1000px;
-    height: 90vh;
+    max-width: 1200px;
+    height: 700px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -135,6 +137,7 @@ a {
 .category-explanation {
     padding-right: 20px;
     width: 40%;
+    overflow: hidden;
 }
 
 .category-graph-container {
@@ -268,6 +271,18 @@ a {
 .this-month-container {
     display: flex;
     justify-content: space-between;
+}
+
+.left-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Rules Section */
@@ -453,10 +468,11 @@ a {
     flex-direction: column;
     align-items: center;
     background: rgb(6, 9, 39);
+    padding: 0px 50px;
 }
 
 .star-container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: url("Images/footer-star.svg");
     background-position: center;
@@ -466,7 +482,7 @@ a {
 }
 
 .footer-container {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     background: url("Images/Binary Kit/Black/Binary_black_011.png");
     background-position: center;

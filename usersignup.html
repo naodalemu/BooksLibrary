@@ -46,8 +46,8 @@
 
             <section class="signup-hero">
 
-                <div class="signup-container">
-                    <div class="left-signup">
+                <div class="signup-container user-container">
+                    <div class="left-signup user-left">
                         <h1 class="signup-desc-name">
                             Hello
                         </h1>
@@ -61,15 +61,21 @@
                             <button class="go-to-login">Log In</button>
                         </a>
                     </div>
-                    <div class="right-signup">
+                    <div class="right-signup user-right">
                         <h1 class="signup-name">
                             Create Account
                         </h1>
                         <form  method="post" action="SignUp" class="signup-form">
-                            <input type="text" name="memberFullName" id="fullname" placeholder="Full Name" class="signup-inputs" required>
-                            <input type="email" name="email" id="email" placeholder="Email Address" class="signup-inputs" required>
-                            <input type="password" name="memberPassword" id="password" placeholder="Password" class="signup-inputs" required>
-                            <input type="tel" name="phoneNumber" id="phonenumber" placeholder="Phone Number" class="signup-inputs" required>
+                            <div class="fields user-fields">
+                                <div class="upper user-upper">
+                                    <input type="text" name="memberFullName" id="fullname" placeholder="Full Name" class="signup-inputs" required>
+                                    <input type="email" name="email" id="email" placeholder="Email Address" class="signup-inputs" required>
+                                </div>
+                                <div class="lower user-lower">
+                                    <input type="password" name="memberPassword" id="password" placeholder="Password" class="signup-inputs" required>
+                                    <input type="tel" name="phoneNumber" id="phonenumber" placeholder="Phone Number" class="signup-inputs" required>
+                                </div>
+                            </div>
                             <div class="gender">
                                 <input type="radio" name="gender" id="male" value="male" required>
                                 <label for="male" class="label-for-male">Male</label>

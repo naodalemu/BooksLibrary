@@ -65,16 +65,22 @@
                             Create Account
                         </h1>
                         <form method="post" action="SignUp" class="signup-form">
-                            <input type="text" name="adminId" id="adminid" placeholder="ID Number" class="signup-inputs" required>
-                            <input type="text" name="adminFullName" id="fullname" placeholder="Full Name" class="signup-inputs" required>
-                            <input type="email" name="email" id="email" placeholder="Email Address" class="signup-inputs" required>
-                            <input type="password" name="password" id="password" placeholder="Password" class="signup-inputs" required>
-                            <input type="tel" name="phoneNumber" id="phonenumber" placeholder="Phone Number" class="signup-inputs" required>
-                            <div class="gender">
-                                <input type="radio" name="gender" id="male" value="male" required>
-                                <label for="male" class="label-for-male">Male</label>
-                                <input type="radio" name="gender" id="female" value="female"required>
-                                <label for="female">Female</label>
+                            <div class="fields">
+                                <div class="upper">
+                                    <input type="text" name="adminId" id="adminid" placeholder="ID Number" class="signup-inputs" required>
+                                    <input type="text" name="adminFullName" id="fullname" placeholder="Full Name" class="signup-inputs" required>
+                                    <input type="email" name="email" id="email" placeholder="Email Address" class="signup-inputs" required>
+                                </div>
+                                <div class="lower">
+                                    <input type="password" name="password" id="password" placeholder="Password" class="signup-inputs" required>
+                                    <input type="tel" name="phoneNumber" id="phonenumber" placeholder="Phone Number" class="signup-inputs" required>
+                                    <div class="gender">
+                                        <input type="radio" name="gender" id="male" value="male" required>
+                                        <label for="male" class="label-for-male">Male</label>
+                                        <input type="radio" name="gender" id="female" value="female"required>
+                                        <label for="female">Female</label>
+                                    </div>
+                                </div>
                             </div>
                             <button class="register">Sign Up</button>
                         </form>
